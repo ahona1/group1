@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tables in HTML</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		h1 {
+			font-size: 36px;
+			font-weight: bold;
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 30px;
+		}
+
+		h2 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+
+		ul,
+		ol {
+			margin-left: 30px;
+			margin-bottom: 20px;
+		}
+
+		li {
+			margin-bottom: 10px;
+		}
+
+		dt {
+			font-weight: bold;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+
+		dd {
+			margin-left: 30px;
+			margin-bottom: 10px;
+		}
+
+		table,
+		th,
+		td {
+			border: 2px solid black;
+		}
+	</style>
+	   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>Tables in HTML</h1>
+	<hr noshade>
+
+	<p> HTML tables are used for displaying data that make sense in spreadsheet software. They consist of rows and
+		columns and are often used on websites for the effective displaying of tabular data.</p>
+
+	<p> A table in HTML consists of table cells inside rows and columns.</p>
+
+	<p>The "table" tag defines an HTML table.</p>
+
+	<p>An HTML table consists of one table element and one or more "tr", "th", and "td" elements.</p>
+
+	<p>The tr element defines a table row, the th element defines a table header, and the td element defines a table
+		cell.</p>
+
+	<p>An HTML table may also include "caption", "colgroup", "thead", "tfoot", and "tbody" elements.</p>
+    
+	<h2>HTML Table Borders</h2>
+	<p>HTML tables can have borders of different styles and shapes.</p>
+	
+	<P>When you add a border to a table, you also add borders around each table cell</P>
+	<p>o add a border, use the CSS border property on table, th, and td elements:</p>
+
+	<table>
+		<tr>
+			<td>A</td>
+			<td>B</td>
+			<td>C</td>
+		</tr>
+		<tr>
+			<td>D</td>
+			<td>E</td>
+			<td>F</td>
+		</tr>
+		<tr>
+			<td>G</td>
+			<td>H</td>
+			<td>I</td>
+		</tr>
+	</table>
+
+	<h2>HTML Table Sizes</h2>
+	<p>HTML tables can have different sizes for each column, row or the entire table.</p>
+	<p>Use the style attribute with the width or height properties to specify the size of a table, row or column.</p>
+
+
+	<table style="width:50%">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>LUCKY</td>
+			<td>DAS</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>AYUSH</td>
+			<td>DAS</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>SANDEEPAN</td>
+			<td>JANA</td>
+			<td>80</td>
+		</tr>
+	</table>
+	<h2>HTML Table Headers</h2>
+	<p>HTML tables can have headers for each column or row, or for many columns/rows.</p>
+	<p>Table headers are defined with th elements. Each th element represents a table cell.</p>
+
+	<p>Use the TH element to define table headers.</p>
+
+	<table style="width:50%">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>ROHAN</td>
+			<td>KUMAR</td>
+			<td>60</td>
+		</tr>
+		<tr>
+			<td>SHIBAJYOTI</td>
+			<td>CHOUDHRI</td>
+			<td>84</td>
+		</tr>
+	</table>
+	<h2>HTML Table Padding & Spacing</h2>
+	<p>HTML tables can adjust the padding inside the cells, and also the space between the cells.</p>
+	<h3>Cell Padding</h3>
+	<p>Cell padding is the space between the cell edges and the cell content.</p>
+	<p>By default the padding is set to 0.</p>
+	<p>To add padding on table cells, use the CSS padding property:</p>
+
+	<p>We can specify different padding for all fours sides of the cell content.</p>
+
+	<table style="border: 2px solid black;">
+		<tr>
+			<th style="padding: 20px;">Firstname</th>
+			<th style="padding: 20px;">Lastname</th>
+			<th style="padding: 20px;">Age</th>
+		</tr>
+		<tr>
+			<td style="padding: 30px;">Jill</td>
+			<td style="padding: 30px;">Smith</td>
+			<td style="padding: 30px;">50</td>
+		</tr>
+		<tr>
+			<td style="padding: 30px;">Eve</td>
+			<td style="padding: 30px;">Jackson</td>
+			<td style="padding: 30px;">94</td>
+		</tr>
+		<tr>
+			<td style="padding: 30px;">John</td>
+			<td style="padding: 30px;">Doe</td>
+			<td style="padding: 30px;">80</td>
+		</tr>
+	</table>
+	<h2>Cell Spacing</h2>
+	<p>Cell spacing is the space between each cell.</p>
+	<p>By default the space is set to 2 pixels</p>
+	<p>To change the space between table cells, use the CSS border-spacing property on the table element</p>
+
+	<p>Change the space between the cells with the border-spacing property.</p>
+
+	<table style="width:50%; border-spacing: 15px;">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>AHONA</td>
+			<td>GHOSE</td>
+			<td>70</td>
+		</tr>
+		<tr>
+			<td>SEMANTI</td>
+			<td>DAS</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>DEBABRATA</td>
+			<td>KAR</td>
+			<td>80</td>
+		</tr>
+	</table>
+</body>
+
+<h2>HTML Table Colspan & Rowspan</h2>
+<p>HTML tables can have cells that span over multiple rows and/or columns.</p>
+<h3> Colspan</h3>
+<p>To make a cell span over multiple columns, use the colspan attribute:</p>
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+  }  
+
+  <p>To make a cell span more than one column, use the colspan attribute.</p>
+  
+  <table style="width:50%">
+	<tr>
+	  <th colspan="2">Name</th>
+	  <th>Age</th>
+	</tr>
+	<tr>
+	  <td>GOURAV</td>
+	  <td>KUMAR</td>
+	  <td>43</td>
+	</tr>
+	<tr>
+	  <td>SAKSHI</td>
+	  <td>ARUNIMA</td>
+	  <td>57</td>
+	</tr>
+  </table>
+  
+  <h3>Rowspan</h3>
+  <P>To make a cell span over multiple rows, use the rowspan attribute:</P>
+  <p>The HTML rowspan attribute define the number of rows a cell of a table should span in an HTML document. It can only be applied on td or th HTML element.</p>
+  <table>
+	<tr>
+	  <th>Name</th>
+	  <td>SANJUKTA</td>
+	</tr>
+	<tr>
+	  <th rowspan="2">Phone</th>
+	  <td>9845783407</td>
+	</tr>
+	<tr>
+	  <td>6789543409</td>
+  </tr>
+  </table>
