@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tags in HTML</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+		
+		h1 {
+			font-size: 36px;
+			font-weight: bold;
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 30px;
+		}
+		
+		h2 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+		
+		ul, ol {
+			margin-left: 30px;
+			margin-bottom: 20px;
+		}
+		
+		li {
+			margin-bottom: 10px;
+		}
+		
+		dt {
+			font-weight: bold;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+		
+		dd {
+			margin-left: 30px;
+			margin-bottom: 10px;
+		}
+	</style>
+	   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<hr>
+<h1>Introduction to HTML Tags</h1>
+<p>Tags can be defined as the instructions which are being directly embedded in the text of an HTML document. 
+The types of tags used in the HTML document are responsible to tell a web browser to do something (follow the instruction) instead of just displaying text. 
+In an HTML document, all tag names are differentiated from other simple text. 
+The tag names are enclosed in between angle brackets or a ‘less than’ and a ‘greater than’ symbol, (&lt;) and (&gt;).
+</p>
+<h2>Top 3 Types of Tags in HTML</h2>
+<p>An HTML document is created using different types of tags. 
+HTML tags can be defined and divided based on a different basis. 
+Let's see them in the coming parts of this article. We have divided HTML tags based on the following classifications:</p>
+<h2><b></b>1. Paired and Unpaired Tags</h2>
+<p>Following are the paired and unpaired tags in HTML explained in detail with the help of examples.</p>
+
+<h3>Paired Tags</h3>
+<p>An HTML tag is known as a paired tag when the tag consists of an opening tag and a closing tag as its companion tag. 
+An HTML Paired tag starts with an opening tag: the tag name enclosed inside the angle brackets; for example, a paragraph opening tag is written as ‘&lt;p&gt;’. 
+The content follows the opening tag, which ends with an ending tag: the tag name starting with a forward slash; for example, an ending paragraph tag is written as ‘&lt;/p&gt;’. 
+The first tag can be referred to as the ‘Opening Tag’, and the second tag can be called Closing Tag.</p>
+<p><strong><b>Example #1:</b></strong></p>
+<pre>&lt;p&gt; This text is a paragraph . &lt;/p&gt;</pre>
+<p><strong>Example #2:</strong></p>
+<p>Another example of a paired tag is italic and/or bold tags:</p>
+<pre>&lt;i&gt; &lt;b&gt; This is a bold and italicized text &lt;/b&gt; &lt;/i&gt;</pre>
+
+<h3>Unpaired Tags</h3>
+<p>An HTML tag is called an unpaired tag when the tag only has an opening tag and does not have a closing tag or a companion tag.
+ The Unpaired HTML tag does not require a closing tag; an opening tag is sufficient in this type. 
+ Unpaired tags are sometimes also named as Standalone Tags or Singular Tags since they do not require a companion tag.</p>
+<p><strong>Example:</strong></p>
+<pre>&lt;p&gt; This is a paragraph &lt;/p&gt;
+&lt;hr&gt;
+&lt;i&gt; &lt;b&gt; This is a bold and italicized text &lt;/b&gt; &lt;/i&gt;</pre>
+
+<h2><b></b>2. Self-Closing Tags</h2>
+<p>Self-Closing Tags are those HTML tags that do not have a partner tag, where the first tag is the only necessary tag that is valid for the formatting. 
+The main and important information is contained WITHIN the element as its attribute. An image tag is a classic example of a self-closing tag. Let's see it in action below:</p>
+<p><strong>Example:</strong></p>
+<pre>&lt;img src="a.jpg" alt="This is an alternate text"&gt;</pre>
+
+<h2><b></b>3. Utility-Based Tags</h2>
+<p>The HTML tags can be widely differentiated on the basis of their utility, that is, on the basis of the purpose they serve. 
+We can divide them basically into three categories as discussed below:</p>
+<h3>Formatting Tags</h3>
+<p>The HTML tags that help us in the formatting of the texts like the size of the text, font styles, making a text bold, etc. 
+This is done using tags like &lt;font&gt;, &lt;b&gt;, &lt;u&gt;, etc. Tables, divisions, and span tags are also those tags that help format a web page or document and set the layout of the page. 
+Below is a small program using divisions for formatting the page along with some other formatting tags.
+</p>
+<h3>Structure Tags</h3>
+<p>The HTML tags that help in structuring the HTML document are called Structure Tags. 
+Description, head, html, title, body, etc., form the group of the page structure tags. 
+The structure tags only assist in creating or forming the basic html page from the root; that is, they do not affect or has any hand in the formatting of texts. 
+So a basic HTML program is the basic group of structural tags:</p>
+<h3>Control Tags</h3>
+<p>Another category of tags that can be created is ‘Control Tags’. 
+The Script tags, radio buttons or checkboxes, the Form tags, etc., forms the control tags. 
+These are the tags that are used in managing content or managing scripts or libraries that are external. 
+All the form tags, drop-down lists, input text boxes, etc., are used in interacting with the visitor or the user.</p>
+<p>The above distinction of the HTML tags is based on the type of tags and their utility. 
+The HTML tags can also be simply divided based on basic categories like Basic HTML Root Tags, 
+Formatting tags, Audio and Video Tags, Form and Input Tags, Frame Tags, Link Tags, List Tags, Table Tags, Style Tags, Meta Tags, etc.</p>
+<hr>
+<h2>Following is a list of Tags with their respective explanation :</h2>
+
+
+
+<h2>Basic HTML</h2>
+<table border="1">
+<tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;!DOCTYPE&gt; &nbsp;</td>
+<td>Defines the document type</td>
+</tr>
+<tr>
+<td>&lt;html&gt; </td>
+<td>Defines an HTML document</td>
+</tr>
+<tr>
+<td>&lt;head&gt; </td>
+<td>Contains metadata/information for the document</td>
+</tr>
+<tr>
+<td>&lt;title&gt; </td>
+<td>Defines a title for the document</td>
+</tr>
+<tr>
+<td>&lt;body&gt; </td>
+<td>Defines the document's body</td>
+</tr>
+<tr>
+<td>&lt;h1&gt; to &lt;h6&gt; </td>
+<td> Defines HTML headings</td>
+</tr>
+<tr>
+<td>&lt;p&gt; </td>
+<td>Defines a paragraph</td>
+</tr>
+<tr>
+<td>&lt;br&gt; </td>
+<td>Inserts a single line break</td>
+</tr>
+<tr>
+<td>&lt;hr&gt; </td>
+<td> Defines a thematic change in the content</td>
+</tr>
+<tr>
+<td>&lt;!--...--&gt; </td>
+<td>Defines a comment</td>
+</tr>
+</table>
+
+<h2>Formatting</h2>
+<table  border="1">
+<tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;address&gt; </td>
+<td>Defines contact information for the author/owner of a document/article</td>
+</tr>
+<tr>
+<td>&lt;b&gt; </td>
+<td>Defines bold text</td>
+</tr>
+<tr>
+<td>&lt;big&gt; </td>
+<td> Not supported in HTML5. Use CSS instead.<br> Defines big text</td>
+</tr>
+<tr>
+<td>&lt;blockquote&gt; </td>
+<td>Defines a section that is quoted from another source</td>
+</tr>
+<tr>
+<td>&lt;center&gt; </td>
+<td> Not supported in HTML5. Use CSS instead.<br> Defines centered text</td>
+</tr>
+<tr>
+<td>&lt;code&gt; </td>
+<td>Defines a piece of computer code</td>
+</tr>
+<tr>
+<td>&lt;font&gt; </td>
+<td> Not supported in HTML5. Use CSS instead.<br> Defines font, color, and size for text</td>
+</tr>
+<tr>
+<td>&lt;i&gt; </td>
+<td>Defines italics text</td>
+</tr>
+<tr>
+<td>&lt;small&gt; </td>
+<td>Defines smaller text</td>
+</tr>
+<tr>
+<td>&lt;strong&gt; </td>
+<td>Defines important text</td>
+</tr>
+<tr>
+<td>&lt;sub&gt; </td>
+<td>Defines subscripted text</td>
+</tr>
+<tr>
+<td>&lt;sup&gt; </td>
+<td>Defines superscripted text</td>
+</tr>
+<tr>
+<td>&lt;time&gt; </td>
+<td>Defines a specific time (or datetime)</td>
+</tr>
+<tr>
+<td>&lt;u&gt; </td>
+<td>Underlines the text</td>
+</tr>
+<tr>
+<td>&lt;pre&gt;</td>
+<td>Defines preformatted text</td>
+</tr>
+</table>
+<h2>Forms and Input</h2>
+<table  border="1">
+<tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;form&gt; </td>
+<td>Defines an HTML form for user input</td>
+</tr>
+<tr>
+<td>&lt;input&gt; </td>
+<td>Defines an input control</td>
+</tr>
+<tr>
+<td>&lt;textarea&gt; </td>
+<td>Defines a multiline input control (text area)</td>
+</tr>
+<tr>
+<td>&lt;button&gt; </td>
+<td>Defines a clickable button</td>
+</tr>
+<tr>
+<td>&lt;select&gt; </td>
+<td>Defines a drop-down list</td>
+</tr>
+<tr>
+<td>&lt;option&gt; </td>
+<td>Defines an option in a drop-down list</td>
+</tr>
+<tr>
+<td>&lt;label&gt; </td>
+<td>Defines a label&nbsp;for an &lt;input&gt; element</td>
+</tr>
+</table>
+
+<h2>Frames</h2>
+<table  border="1">
+<tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;frame&gt; </td>
+<td>  Not supported in HTML5.<br> Defines a window (a frame) in a frameset</td>
+</tr>
+<tr>
+<td> &lt;frameset&gt; </td>
+<td> Not supported in HTML5.<br> Defines a set of frames</td>
+</tr>
+<tr>
+<td>&lt;noframes&gt; </td>
+<td> Not supported in HTML5.<br> Defines an alternate content for users that do not support 
+frames</td>
+</tr>
+<tr>
+<td>&lt;iframe&gt; </td>
+<td>Defines an inline frame</td>
+</tr>
+</table>
+
+<h2>Images</h2>
+<table  border="1">
+<tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;img&gt; </td>
+<td>Defines an image</td>
+</tr>
+<tr>
+<td>&lt;map&gt; </td>
+<td>Defines a client-side image map </td>
+</tr>
+<tr>
+<td>&lt;area&gt; </td>
+<td>Defines an area inside an image map</td>
+</tr>
+<tr>
+<td>&lt;canvas&gt; </td>
+<td>Used to draw graphics, on the fly, via scripting (usually JavaScript)</td>
+</tr>
+<tr>
+<td>&lt;picture&gt; </td>
+<td>Defines a container for multiple image resources</td>
+</tr>
+<tr>
+<td>&lt;svg&gt; </td>
+<td>Defines a container for SVG graphics</td>
+</tr>
+</table>
+
+<h2>Audio / Video</h2>
+<table  border="1">
+<tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;audio&gt; </td>
+<td>Defines sound content</td>
+</tr>
+<tr>
+<td>&lt;source&gt; </td>
+<td>Defines multiple media resources for media elements (&lt;video&gt;, &lt;audio&gt; 
+and &lt;picture&gt;)</td>
+</tr>
+<tr>
+<td>&lt;track&gt; </td>
+<td>Defines text tracks for media elements (&lt;video&gt; and &lt;audio&gt;)</td>
+</tr>
+<tr>
+<td>&lt;video&gt; </td>
+<td>Defines a video or movie</td>
+</tr>
+</table>
+
+<h2>Links</h2>
+<table  border="1">
+<tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;a&gt; </td>
+<td>Defines a hyperlink</td>
+</tr>
+<tr>
+<td>&lt;link&gt; </td>
+<td>Defines the relationship between a document and an external resource (most 
+used to link to style sheets)</td>
+</tr>
+<tr>
+<td>&lt;nav&gt; </td>
+<td>Defines navigation links</td>
+</tr>
+</table>
+
+<h2>Lists</h2>
+<table  border="1">
+<tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;ul&gt; </td>
+<td>Defines an unordered list</td>
+</tr>
+<tr>
+<td>&lt;ol&gt; </td>
+<td>Defines an ordered list</td>
+</tr>
+<tr>
+<td>&lt;li&gt; </td>
+<td>Defines a list item</td>
+</tr>
+<tr>
+<td>&lt;dir&gt;</td>
+<td> Not supported in HTML5. Use &lt;ul&gt; instead.<br> Defines a directory list</td>
+</tr>
+<tr>
+<td>&lt;dl&gt; </td>
+<td>Defines a description list</td>
+</tr>
+<tr>
+<td>&lt;dt&gt; </td>
+<td>Defines a term/name in a description list</td>
+</tr>
+<tr>
+<td>&lt;dd&gt; </td>
+<td>Defines a description of a term/name in a description list</td>
+</tr>
+</table>
+
+<h2>Tables</h2>
+<table  border="1">
+<tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;table&gt; </td>
+<td>Defines a table</td>
+</tr>
+<tr>
+<td>&lt;caption&gt; </td>
+<td>Defines a table caption</td>
+</tr>
+<tr>
+<td>&lt;th&gt; </td>
+<td>Defines a header cell in a table</td>
+</tr>
+<tr>
+<td>&lt;tr&gt; </td>
+<td>Defines a row in a table</td>
+</tr>
+<tr>
+<td>&lt;td&gt; </td>
+<td>Defines a cell in a table</td>
+</tr>
+<tr>
+<td>&lt;thead&gt; </td>
+<td>Groups the header content in a table</td>
+</tr>
+<tr>
+<td>&lt;tbody&gt; </td>
+<td>Groups the body content in a table</td>
+</tr>
+<tr>
+<td>&lt;tfoot&gt; </td>
+<td>Groups the footer content in a table</td>
+</tr>
+<tr>
+<td>&lt;col&gt; </td>
+<td>Specifies column properties for each column within a &lt;colgroup&gt; element </td>
+</tr>
+<tr>
+<td>&lt;colgroup&gt; </td>
+<td>Specifies a group of one or more columns in a table for formatting</td>
+</tr>
+</table>
+</body>
+</html>
